@@ -20,7 +20,7 @@ export const useAuthStatus = () => {
     return () => {
       isMounted.current = false
     }
-  }, [isMounted])
+  }, [isMounted, auth])
 
   return { loggedIn, checkingStatus }
 }
